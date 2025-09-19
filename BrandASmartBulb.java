@@ -9,14 +9,14 @@ public class BrandASmartBulb implements SmartBulb {
     public void loadUsage(String filename) {
         try {
             File file = new File(filename);
-            try (Scanner scanner = new Scanner(file)) {
+            try (Scanner scanner = new Scanner(file)) { // scans the file and saves the data into the vairble usageData
                 while (scanner.hasNextLine()) {
                     usageData = scanner.nextLine();
                 }
             }
         }
         catch (FileNotFoundException e) {
-            System.out.println("File not found: " + e.getMessage());
+            System.out.println("File not found: " + e.getMessage()); // catch if the file is not found and return an error
         }
 }
 
@@ -24,4 +24,5 @@ public class BrandASmartBulb implements SmartBulb {
     public void displayUsage() {
         System.out.println(usageData);
     }
+
 }
