@@ -4,13 +4,13 @@ public class BrandAFactory implements SmartDeviceFactory {
     @Override
     public SmartBulb createBulb() {
         SmartBulb bulb = new BrandASmartBulb(); // Create new Brand A bulb
-        bulb.loadUsage("brandASmartBulb.txt"); // Load data from external file
+        bulb.loadUsage("C:\\Users\\Drew\\OneDrive - Ontario Tech University\\Documents\\Software Architechture\\Assignment-1-Design-Patterns-main\\BrandABulb.txt"); // Load data from external file
         return bulb;
     }
     @Override
     public SmartLock createLock() {
         SmartLock lock = new BrandASmartLock(); // Create new Brand A lock
-        lock.loadUsage("brandASmartLock.txt"); // Load data from external file
+        lock.loadUsage("C:\\Users\\Drew\\OneDrive - Ontario Tech University\\Documents\\Software Architechture\\Assignment-1-Design-Patterns-main\\BrandALock.txt"); // Load data from external file
         return lock;
     }
 }

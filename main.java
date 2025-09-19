@@ -1,0 +1,16 @@
+public class main {
+    public static void main(String[] args) {
+        SmartDeviceFactory brandAFactory = new BrandAFactory();
+        SmartDeviceFactory brandBFactory = new BrandBFactory();
+
+        SmartBulb brandABulb = brandAFactory.createBulb();
+
+        SmartLock brandBLock = brandBFactory.createLock();
+
+        System.out.println("Brand A Smart Bulb Usage:");
+        brandABulb.displayUsage();
+    
+        System.out.println("Brand B Smart Lock Usage:");
+        brandBLock.displayUsage();
+    }
+}
