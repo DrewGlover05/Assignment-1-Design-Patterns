@@ -22,7 +22,8 @@ public class BrandASmartLock implements SmartLock {
 
     @Override
     public void displayUsage() {
-        System.out.println(usageData);
+        System.out.println(usageData); //prints off the vairable usageData
     }
 
 }
+
