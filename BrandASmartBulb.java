@@ -9,7 +9,7 @@ public class BrandASmartBulb implements SmartBulb {
     public void loadUsage(String filename) {
         try {
             File file = new File(filename);
-            try (Scanner scanner = new Scanner(file)) { // scans the file and saves the data into the vairble usageData
+            try (Scanner scanner = new Scanner(file)) { // scans the file and saves the data into the variable usageData
                 while (scanner.hasNextLine()) {
                     usageData = scanner.nextLine();
                 }
@@ -26,3 +26,4 @@ public class BrandASmartBulb implements SmartBulb {
     }
 
 }
+
