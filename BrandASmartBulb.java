@@ -22,8 +22,9 @@ public class BrandASmartBulb implements SmartBulb {
 
     @Override
     public void displayUsage() {
-        System.out.println(usageData);
+        System.out.println(usageData); //prints off the vairable usageData
     }
 
 }
+
 
