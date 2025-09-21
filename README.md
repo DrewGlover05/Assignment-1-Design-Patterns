@@ -38,3 +38,5 @@ The Test.java method
 - Displays the usage data of the bulb and lock
 
 <img width="1665" height="760" alt="code1" src="https://github.com/user-attachments/assets/a4c1dfe0-9c39-4178-95af-94e52a2ecd7d" />
+
+**UML Diagram:**
